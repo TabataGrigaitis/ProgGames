@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Grigaitis</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1umbxoux7b1o0</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="grass" sid="791058227868661">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\grass.jpg" />
+        </object-type>
+        <object-type name="road" sid="675664208625812">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\road.jpg" />
+        </object-type>
+        <object-type name="stone" sid="337203186658561">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="877021371824470">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\stone.jpg" />
+        </object-type>
+        <object-type name="strip" sid="267112645274937">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\yellow-dash.png" />
+        </object-type>
+        <object-type name="Sprite" sid="146325411553443">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="884816636102198">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="669095939290324">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="186788092884438">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="n" pingpong="0" repeatcount="1" repeatto="0" sid="735136782607085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="s" pingpong="0" repeatcount="1" repeatto="0" sid="959307363347013" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="l" pingpong="0" repeatcount="1" repeatto="0" sid="950990992353108" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="r" pingpong="0" repeatcount="1" repeatto="0" sid="515027106542867" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="385881417638882">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="car" sid="437338173169378">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="656401919890092">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="c1" pingpong="0" repeatcount="1" repeatto="0" sid="290616919140621" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-light-blue.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c2" pingpong="0" repeatcount="1" repeatto="0" sid="315934816964885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-blue.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c3" pingpong="0" repeatcount="1" repeatto="0" sid="393727103716820" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-brown.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c4" pingpong="0" repeatcount="1" repeatto="0" sid="143627397863709" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-gray.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c5" pingpong="0" repeatcount="1" repeatto="0" sid="952051575818743" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-green.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c6" pingpong="0" repeatcount="1" repeatto="0" sid="624818725829453" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-light-gray.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c7" pingpong="0" repeatcount="1" repeatto="0" sid="486450107063907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-orange.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c8" pingpong="0" repeatcount="1" repeatto="0" sid="417391803456288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-pink.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c9" pingpong="0" repeatcount="1" repeatto="0" sid="634421207530922" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-red.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c10" pingpong="0" repeatcount="1" repeatto="0" sid="762473025848488" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-violet.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="c11" pingpong="0" repeatcount="1" repeatto="0" sid="799265926804002" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\car-yellow.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="carwarp" sid="668239427747559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555929380517923" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GO" sid="824985960048732">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="trashcan" sid="133792456422650">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167660122759539" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\trashcan.png">
+                        <collision-poly>
+                            <point x="0.0921053" y="0.0714286" />
+                            <point x="0.5" y="0.0102041" />
+                            <point x="0.921053" y="0.0612245" />
+                            <point x="0.907895" y="0.5" />
+                            <point x="0.848684" y="0.882653" />
+                            <point x="0.5" y="0.979592" />
+                            <point x="0.138158" y="0.892857" />
+                            <point x="0.0789474" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="score" sid="625245727928117">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="trash" sid="348062981139282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779765560789616" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tabat\Desktop\FATEC\PROGRAMAÇÃO\game-dev-w-construct-2-master\Game Development with Construct 2\Ch04-assets\assets\trash.png">
+                        <collision-poly>
+                            <point x="0.234375" y="0.234375" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.890625" y="0.890625" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.15625" y="0.84375" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Main.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="7" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
